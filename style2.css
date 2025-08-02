@@ -341,7 +341,6 @@ small a{
 
 .box1 p,.box2 p,.box3 p,.box4 p{
     color: #666;
-    text-wrap: wrap;
     line-height: 1.5rem;
     letter-spacing: 0.05rem;
     
