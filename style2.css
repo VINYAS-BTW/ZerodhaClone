@@ -1,0 +1,281 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    list-style: none; 
+}
+body {
+    background-color: white;
+    color: #333;
+    margin: 0;
+    padding: 0;
+
+}
+.nav{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 30px 25px;
+    height: 60px;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+
+}
+.logo{
+    margin-right: auto;
+    padding-left: 80px;
+}
+.logo-img{
+    height: 18px;
+}
+
+.nav-links
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.nav-links a {
+    color: #666;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.3s;
+    margin-left: 25px;
+}
+.nav-links a:last-child{
+    margin-right: 20pxc;
+}
+
+.nav-links a:hover {
+    color: rgb(66, 144, 216);
+}
+.menu-icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; 
+    margin-right: 100px;
+}
+.menu-icon svg {
+    position: absolute;
+    left: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 25px;
+
+}
+
+@media screen and (max-width:768px){
+    .nav{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and(max-width:960px)
+{
+    .nav{
+        height:60px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .nav .logo{
+        max-width: 110px;
+  
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .menu-icon svg {
+        display: block;
+    }
+}
+
+.hero-sec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.hero-container{
+    margin: 150px 50px ;
+    margin-bottom: 0px;
+    padding:10px;
+
+}
+.hero-container h3{
+     font-size: 1.7rem;
+     text-align: center;
+     color: #333;
+     letter-spacing: 0.2px ;
+     font-weight: 600;
+}
+
+.hero-container p{
+     text-align: center;
+     color: #797373;
+     font-size: 1.4rem;
+     padding-top: 16px;
+
+}
+
+
+.img-otp-container{
+  display: flex;
+  max-width: 900px;
+  margin: 4rem auto;
+  overflow: hidden;;
+}
+.img-sec{
+   .img-sec {
+  flex: 1;              /* takes half */
+  padding: 2rem;
+  background: #fafafa;
+}
+     
+}
+.img-sec img{
+    height: 400px;
+    width: 100%;
+}
+.ss-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%;
+  margin:4rem 2rem;
+}
+.ss-container span{
+    font-weight: 400;
+    font-size:2em;
+}
+.ss-container p{
+    color: #b0a5a5;
+    margin-bottom: 20px;
+    letter-spacing: 0.2px;
+}
+.signup-sec{
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  height: 100%;
+  
+}
+.signup-sec h2{
+     font-size: 1.7rem;
+     text-align: left;
+     color: #333;
+     letter-spacing: 0.2px ;
+     font-weight: 600;
+}
+.forms {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  gap: 0.5rem;
+}
+.inl-ph-sp{
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+}
+
+.phone-logo {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  border: 1px solid #a8a4a4;
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+  background-color: #fff;
+}
+
+.phone-logo img {
+  display: block;
+  height: 18px;
+  width: auto;
+  margin-right: 0.3rem;
+
+}
+
+.phone-logo span {
+  margin-left: 0;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+}
+
+input[type="tel"] {
+  flex: 1;
+  padding: 1rem 3rem 1rem 0.5rem;
+  border: 1px solid #a8a4a4;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+  font-size: 1rem;
+  background-color: #fff;
+  line-height: 1.2;
+  min-width: 200px;
+ 
+}
+input[placeholder="Enter your phone number"]{
+    color: #e0dcdc;
+    opacity: 70%;
+    letter-spacing: 0.4px;
+    font-weight: 300px;
+    font-size: 1rem;
+}
+
+
+.get-otp {
+  margin-top: 2rem;
+  padding: 0.75rem;
+  background: #008cff;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.get-otp:hover {
+  background: #070809;
+}
+
+small{
+    font: 0.3em;
+    margin: 10px;  
+    color: #666; 
+}
+small a{
+    color: #008cff;
+}
